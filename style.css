@@ -1,0 +1,488 @@
+/*----------------Fonts and Preset CSS--------------*/
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Chela+One');
+
+body {
+    background:url(img/body-bg.jpg);
+}
+a, .btn {
+    color: #eee !important;
+    transition: .3s;
+}
+a.active, a:hover, a:focus, .btn:hover, .btn:focus {
+    color: #f1ac11 !important;
+    transition: .3s;
+}
+img{
+    max-width: 100%;
+}
+.great-vibes{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600; 
+}
+
+/*----------------Header CSS--------------*/
+.header{
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+}
+.navbar-brand.logo {
+    color: #f1ac11 !important;
+}
+.header nav{
+    background: transparent;
+    border: none;
+}
+.logo{
+    font-size: 35px;
+    color: #fff !important;
+    line-height: 1;
+}
+.mainmenu{
+    margin-top: 20px;
+    font-family: 'Chela One', cursive !important;
+}
+.mainmenu li>a {
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+}
+
+/*-----------Slider CSS---------------*/
+.slider{
+    background: url(img/slider.jpg) no-repeat 100% center;
+    color: #fff;
+}
+.slider .caption{
+    padding: 19.5% 0;
+}
+.slider .logo{
+    font-size: 100px;
+}
+.slider .caption .slogan{
+    font-size: 35px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+/*-----------Reservation CSS---------------*/
+.form-inline.reservation-form {
+    padding: 20% 10%;
+    margin-top: -5%;
+    background: url(img/section-bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.reservation-form .title{
+    margin-top: 0;
+    padding-bottom: 60px;
+}
+.reservation-form .title h2:before, .reservation-form .title h2:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+}
+.reservation-form .select-option-area{
+    margin: 0 -10px
+}
+.reservation-form .form-control{
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    display: inline-block;
+    position:relative;
+    text-transform: uppercase;
+    background: url(img/downarrow.png) no-repeat right white;
+    background-size: 14px 20px;
+    width: 100%;
+    border-bottom: 2px solid#000;
+    border-right: 2px linear-gradient(white, black )
+}
+.btn-check{
+    border-radius: 2px;
+    margin-top: 70px;
+    background: #000;
+    font-weight: 600;
+    padding: 5px 20px;
+    transition: .5s;
+}
+.reservation-left, .reservation-right {
+  position: absolute;
+  max-height: 200px;
+  max-width: 200px;
+}
+.reservation-left {
+  left: -8%;
+  top: 15px;
+}
+.reservation-right {
+  right: -8%;
+  bottom: 50px;
+}
+
+
+/*-----------------Chef CSS----------------*/
+.chef{
+    margin: 80px 0px;
+}
+.chef-promo {
+    background: #fff;
+    padding: 50px 80px;
+}
+.chef-promo.left {
+    margin-right: 25px;
+    margin-top: 65px;
+}
+.chef-promo.right {
+    margin-left: 25px;
+}
+.chef-img{
+    width: 100%;
+    max-height: 250px;
+}
+.chef-img.left {
+    padding-right: 25px;
+    margin-top: 80px;
+}
+.chef-img.right {
+    padding-left: 25px;
+}
+
+
+/*-----------------About CSS----------------*/
+.about{
+    position: relative;
+    overflow: hidden;
+    background: url(img/about-bg.jpg) no-repeat center 100%;
+}
+.about img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+.about .carousel .item .about-text {
+  margin: 15% auto;
+  width: 400px;
+  background: #fff;
+  padding: 40px 75px;
+}
+
+
+/*---------------Featured CSS------------------*/
+.featured .col-md-10 {
+	margin: 0 auto;
+	float: none;
+}
+.featured-item{
+    padding: 10%;
+    margin-top: -5%;
+    overflow: hidden;
+    background: url(img/section-bg.png);
+    background-size: 100% 100%;
+}
+.featured-item .title{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+}
+.btn-full{
+    border-radius: 2px;
+    width: 100%;
+    background: #000;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+
+/*---------------Food Menu CSS------------------*/
+.food-manu{
+    margin: 100px auto
+}
+.food-manu .food-item{
+    background: #fff;
+    padding: 25px;
+}
+.food-manu .food-item img{
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+}
+.food-manu .food-item .name{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+}
+.owl-prev {
+    left: 0;
+    margin-left: -50px;
+}
+.owl-next {
+    right: 0;
+    margin-right: -50px;
+}
+.owl-next,.owl-prev{
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    padding: 0;
+    transition: .3s;
+}
+.owl-next:hover, .owl-prev:hover{
+    color: #F1AC11;
+    transition: .3s;
+}
+
+
+/*---------------Footer CSS------------------*/
+.footer{
+    padding: 100px 0px;
+    background: url(img/footer-bg.jpg);
+    background-size:  cover;
+}
+.footer .footer-widget-area h4{
+    font-family: 'Chela One', cursive !important;
+}
+.footer .footer-widget-area h4, .footer .footer-widget-area h1{
+    color: #F1AC11 !important;
+    margin: 10px 0;
+}
+.footer ul{
+    padding: 0;
+}
+.footer ul li{
+    list-style: none;
+    float: none;
+}
+.footer ul li{
+    list-style: none;
+    float: none;
+    margin: 5px 0px;
+}
+.footer ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    transition: .3s;
+    font-family: 'Chela One', cursive !important;
+}
+.footer a:hover{
+    padding-left: 3px;
+    border: 1px solid#F1AC11;
+    background: rgba(0,0,0,0.6);
+}
+.footer .form-control {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 5px 10px 15px;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+}
+.footer input[type="submit"]{
+    margin-top: 10px;
+    font-weight: 600;
+    background: #F1AC11;
+}
+
+/*------------------------Responsive CSS--------------------*/
+@media screen and (max-width: 1199px){
+    .featured img {
+        margin-top: 30%;
+    }
+}
+@media screen and (max-width: 1023px){
+    .featured img {
+        margin-top: 40%;
+    }
+}
+@media screen and (max-width: 991px){
+    .slider .caption .slogan {
+        font-size: 35px;
+    }
+    .reservation-left, .reservation-right {
+      max-height: 150px;
+      max-width: 150px;
+    }
+    .chef-promo {
+        padding: 30px;
+    }
+    .chef-promo.left, .chef-promo.right {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+        border-color: #f1ac11;
+    }
+    .navbar-default .navbar-toggle:focus .icon-bar, .navbar-default .navbar-toggle:hover .icon-bar{
+        background-color: #f1ac11;
+    }
+    .navbar-collapse {
+        text-align: right;
+        background: rgba(0, 0, 0, 0.5) !important;
+        margin: 0 -15px;
+        padding: 0 30px;
+    }
+    .mainmenu .navbar-nav>li>a.active, .mainmenu .navbar-nav>li:hover a, .mainmenu .navbar-nav>li>a:focus  {
+        margin: 10px 15px;
+        border-right: 3px solid #f1ac11;
+        padding: 0 10px;
+        transition: .3s;
+        outline: 0;
+    }
+    .slider .caption {
+        padding: 35% 0;
+    }
+    .slider .caption .logo{
+        font-size: 70px;
+    }
+    .slider .caption .slogan{
+        font-size: 25px;
+    }
+    .chef .pull-right {
+        z-index: 9;
+        margin-bottom: 50px;
+            
+    }
+    .chef-img {
+        max-height: 100%;
+        padding: 0 !important;;
+        margin: 0;
+    }
+    .chef-img.left {
+        margin-top: 0;
+    }
+    .featured img {
+        margin-top: 0;
+    }
+    .featured .btn {
+        margin-bottom: 25px;
+    }
+    .footer .col-sm-5 {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 639px){
+    .slider .caption .logo{
+        font-size: 50px;
+    }
+    .slider .caption .slogan{
+        font-size: 20px;
+    }
+    .reservation-form .title {
+        padding-bottom: 30px;
+    }
+    .reservation-form .title h2 {
+        font-size: 20px;
+    }
+    .select-option{
+        width: 100%;
+    }
+    .select-option-area .form-control{
+        width: 160px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+    .reservation-left, .reservation-right {
+      max-height: 120px;
+      max-width: 120px;
+    }
+    .reservation-form .btn {
+        margin-top: 20px
+    }
+    .footer .col-xs-4 {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .footer .col-xs-4, .footer .col-sm-5 {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 3px;
+    }
+    .footer ul li {
+        float: left;
+        padding: 2px 5px;
+        border: 1px solid #fff;
+        margin: 0 5px 5px 0;
+        transition: .3s;
+    }
+    .footer ul li:hover {
+        border: 1px solid #F1AC11;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .footer a{
+        padding: 2px 4px;
+    }
+    .footer a:hover{
+        padding: 2px 4px;
+        border: none;
+        background: transparent;
+    }
+}
+
+@media screen and (max-width: 479px){
+    .slider .caption {
+        padding: 25% 0;
+    }
+    .slider .caption .logo{
+        display: none;
+    }
+    .slider .caption .slogan{
+        font-size: 16px;
+    }
+    .reservation .col-xs-10{
+        margin: 0;
+        width: 100%;
+    }
+    .reservation-left, .reservation-right {
+      display: none;
+    }
+    .about .item {
+        padding: 0 15px;
+    }
+    .about .about-text {
+        max-width: 100%;
+    }
+    .about .carousel .item .about-text {
+      padding: 15px 35px;
+    }
+}
+
+@media screen and (max-width: 359px){
+    .header .mainmenu .container{
+        padding: 0;
+    }
+    .header .mainmenu .col-md-12{
+        padding: 0 9px;
+    }
+    .mainmenu{
+        margin-top: 0;
+    }
+    .slider .caption .logo{
+        font-size: 22px;
+    }
+    .slider .caption .slogan{
+        font-size: 16px;
+    }
+}
