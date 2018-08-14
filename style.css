@@ -20,6 +20,15 @@ img{
     font-family: 'Great Vibes', cursive;
     font-weight: 600; 
 }
+.color{
+    color: #f1ac11 !important;
+}
+.mb-30{
+    margin-bottom: 30px !important;
+}
+.p-15-0{
+    padding: 15px 0 !important;
+}
 
 /*----------------Header CSS--------------*/
 .header{
@@ -162,19 +171,19 @@ img{
 }
 
 
-/*-----------------About CSS----------------*/
-.about{
+/*-----------------blog CSS----------------*/
+.blog{
     position: relative;
     overflow: hidden;
-    background: url(img/about-bg.jpg) no-repeat center 100%;
+    background: url(img/blog-bg.jpg) no-repeat center 100%;
 }
-.about img{
+.blog img{
     position: absolute;
     width: 100%;
     left: 0;
     right: 0;
 }
-.about .carousel .item .about-text {
+.blog .carousel .item .blog-text {
   margin: 15% auto;
   width: 400px;
   background: #fff;
@@ -208,19 +217,19 @@ img{
 
 
 /*---------------Food Menu CSS------------------*/
-.food-manu{
+.special{
     margin: 100px auto
 }
-.food-manu .food-item{
+.special .food-item{
     background: #fff;
     padding: 25px;
 }
-.food-manu .food-item img{
+.special .food-item img{
     height: 250px;
     width: 250px;
     padding: 15px;
 }
-.food-manu .food-item .name{
+.special .food-item .name{
     font-family: 'Great Vibes', cursive;
     font-weight: 600;
 }
@@ -362,7 +371,7 @@ img{
     .chef .pull-right {
         z-index: 9;
         margin-bottom: 50px;
-            
+
     }
     .chef-img {
         max-height: 100%;
@@ -384,6 +393,9 @@ img{
 }
 
 @media screen and (max-width: 639px){
+    .food-menu .col-xs-6{
+        width: 100%;
+    }
     .slider .caption .logo{
         font-size: 50px;
     }
@@ -458,13 +470,13 @@ img{
     .reservation-left, .reservation-right {
       display: none;
     }
-    .about .item {
+    .blog .item {
         padding: 0 15px;
     }
-    .about .about-text {
+    .blog .blog-text {
         max-width: 100%;
     }
-    .about .carousel .item .about-text {
+    .blog .carousel .item .blog-text {
       padding: 15px 35px;
     }
 }
@@ -485,4 +497,35 @@ img{
     .slider .caption .slogan{
         font-size: 16px;
     }
+}
+
+
+/*------------------- Food Item CSS ---------------*/
+.food-menu{
+    margin: 80px 0px;
+}
+.banner{
+    background: url(img/menu-banner.jpg) no-repeat 100% center;
+    color: #fff;
+}
+.banner .caption{
+    padding: 15% 0;
+}
+.banner .caption .slogan{
+    font-size: 35px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.weight--bold{
+    font-weight: bold;
+}
+.food-item{
+    background:#fff;
+    padding: 15px;
+    border-radius: 4px;
+}
+.name-price{
+    font-size: 22px;
+    padding-left: 15px;
+    padding-right: 5px;
 }

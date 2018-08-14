@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!-- All Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="PeaceYeard">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Title -->
     <title>The Restaurent</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+
+    <!-- All CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
@@ -17,7 +23,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
+
+    <!-- header -->
+<header class="header" id="home">
     <nav class="navbar navbar-default mainmenu">
         <div class="container">
             <div class="row">
@@ -32,11 +40,12 @@
                     </div>
                     <div class="collapse navbar-collapse" id="mainmenu">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#" class="active"><i class="fa fa-home"></i> home</a></li>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">food menu</a></li>
-                            <li><a href="#">our cheff</a></li>
-                            <li><a href="#">contact us</a></li>
+                            <li><a href="index.html" class="active"><i class="fa fa-home"></i> home</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="cheff.html">our cheff</a></li>
+                            <li><a href="food-menu.html">food menu</a></li>
+                            <li><a href="blog.html">our blog</a></li>
+                            <li><a href="contact.html">contact us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,12 +53,16 @@
         </nav>
     </div>
 </header>
-<section class="slider">
+
+    <!-- Slider -->
+<section class="slider" id="slider">
     <div class="caption text-center">
         <p class="logo great-vibes">The Restaurant</p>
         <p class="slogan text-capitalize great-vibes">food. first &amp; foremost.</p>
     </div>
 </section>
+
+    <!-- Reservation -->
 <section class="reservation text-center" id="reservation">
     <div class="container">
         <div class="row">
@@ -62,9 +75,9 @@
                         <div class="select-option-area">
                             <select class="form-control" required>
                                 <option>DATE <i class="fa fa-chevron-down"></i></option>
-                                <option>20 April 2017</option>
-                                <option>21 April 2017</option>
-                                <option>22 April 2017</option>
+                                <option value="20 April 2017">20 April 2017</option>
+                                <option value="21 April 2017">21 April 2017</option>
+                                <option value="22 April 2017">22 April 2017</option>
                             </select>
                         </div>
                     </div>
@@ -72,9 +85,9 @@
                         <div class="select-option-area">
                             <select class="form-control" required>
                                 <option>TIME <i class="fa fa-chevron-down"></i></option>
-                                <option>8:00 am</option>
-                                <option>8:30 am</option>
-                                <option>9:00 am</option>
+                                <option value="8:00 am">8:00 am</option>
+                                <option value="8:30 am">8:30 am</option>
+                                <option value="9:00 am">9:00 am</option>
                             </select>
                         </div>
                     </div>
@@ -82,9 +95,9 @@
                         <div class="select-option-area">
                             <select class="form-control" required>
                                 <option>TABLE <i class="fa fa-chevron-down"></i></option>
-                                <option>1 Person</option>
-                                <option>2 Person</option>
-                                <option>4 Person</option>
+                                <option value="01 Person">1 Person</option>
+                                <option value="02 Person">2 Person</option>
+                                <option value="03 Person">4 Person</option>
                             </select>
                         </div>
                     </div>
@@ -96,6 +109,8 @@
         </div>
     </div>
 </section>
+
+    <!-- Chef -->
 <section class="chef" id="chef">
     <div class="container">
         <div class="row">
@@ -118,7 +133,7 @@
                     <div class="col-sm-6">
                         <div class="chef-promo right">
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                            <a href="" class="btn btn-full text-uppercase">read more</a>
+                            <a href="#" class="btn btn-full text-uppercase">read more</a>
                         </div>
                     </div>
                 </div>
@@ -126,27 +141,31 @@
         </div>
     </div>
 </section>
-<section class="about text-center" id="about">
+
+    <!-- Blog -->
+<section class="blog text-center" id="blog">
     <div class="carousel slide" data-ride="carousel" data-interval="3300">
         <div class="carousel-inner">
             <div class="item active">
-                <div class="about-text">
-                    <h3 class="text-uppercase">Our Story</h3>
+                <div class="blog-text">
+                    <h3 class="text-uppercase">Our Blog</h3>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <a href="" class="btn btn-full text-uppercase">read more</a>
+                    <a href="#" class="btn btn-full text-uppercase">read more</a>
                 </div>
             </div>
             <div class="item">
-                <div class="about-text">
-                    <h3 class="text-uppercase">Our Story</h3>
+                <div class="blog-text">
+                    <h3 class="text-uppercase">Our Blog</h3>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                    <a href="" class="btn btn-full text-uppercase">read more</a>
+                    <a href="#" class="btn btn-full text-uppercase">read more</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="featured">
+
+    <!-- Featured -->
+<section class="featured" id="featured">
     <div class="container">
         <div class="row">
             <div class="col-md-10">
@@ -157,14 +176,16 @@
                     <div class="col-sm-6">
                         <h1 class="text-center title">Sale Meuniere</h1><hr>
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                        <a href="" class="btn btn-full text-uppercase">make reservation</a>
+                        <a href="#" class="btn btn-full text-uppercase">make reservation</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section class="food-manu" id="food-manu">
+
+    <!-- Special -->
+<section class="special" id="special">
     <div class="container">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
@@ -202,7 +223,9 @@
         </div>
     </div>
 </section>
-<footer class="footer text-capitalize">
+
+    <!-- Footer -->
+<footer class="footer text-capitalize" id="footer">
     <div class="container">
         <div class="row">
             <div class="col-xs-offset-1 col-xs-10">
@@ -210,30 +233,30 @@
                     <div class="col-sm-6">
                         <div class="row">
                             <div class="col-xs-4">
-                                <h4>About Us</h4>
+                                <h4>blog Us</h4>
                                 <ul>
-                                    <li><a href="">faq investors</a></li>
-                                    <li><a href="">our history</a></li>
-                                    <li><a href="">news &amp; update</a></li>
-                                    <li><a href="">franchise info</a></li>
+                                    <li><a href="#">faq investors</a></li>
+                                    <li><a href="#">our history</a></li>
+                                    <li><a href="#">news &amp; update</a></li>
+                                    <li><a href="#">franchise info</a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-4">
                                 <h4>Contact Us</h4>
                                 <ul>
-                                    <li><a href="">membership</a></li>
-                                    <li><a href="">donations</a></li>
-                                    <li><a href="">mobile app</a></li>
-                                    <li><a href="">employment</a></li>
+                                    <li><a href="#">membership</a></li>
+                                    <li><a href="#">donations</a></li>
+                                    <li><a href="#">mobile app</a></li>
+                                    <li><a href="#">employment</a></li>
                                 </ul>
                             </div>
                             <div class="col-xs-4">
                                 <h4>Careers</h4>
                                 <ul>
-                                    <li><a href="">our veterans</a></li>
-                                    <li><a href="">our benifits</a></li>
-                                    <li><a href="">our benifits</a></li>
-                                    <li><a href="">our campaigns</a></li>
+                                    <li><a href="#">our veterans</a></li>
+                                    <li><a href="#">our benifits</a></li>
+                                    <li><a href="#">our benifits</a></li>
+                                    <li><a href="#">our campaigns</a></li>
                                 </ul>
                             </div>
                         </div>
