@@ -23,11 +23,41 @@ img{
 .color{
     color: #f1ac11 !important;
 }
+.mt-0{
+    margin-top: 0px !important;
+}
+.mb-0{
+    margin-top: 0px !important;
+}
+.mt-20{
+    margin-top: 20px !important;
+}
+.mb-20{
+    margin-bottom: 20px !important;
+}
+.mt-30{
+    margin-top: 30px !important;
+}
 .mb-30{
     margin-bottom: 30px !important;
 }
+.mt-80{
+    margin-top: 80px !important;
+}
+.mt-100{
+    margin-top: 100px !important;
+}
 .p-15-0{
     padding: 15px 0 !important;
+}
+.p-30{
+    padding: 30px !important;
+}
+.bg-white{
+    background: #fff !important;
+}
+.radious{
+    border-radious: 4px !important;
 }
 
 /*----------------Header CSS--------------*/
@@ -504,7 +534,7 @@ img{
 .food-menu{
     margin: 80px 0px;
 }
-.banner{
+#food-menu{
     background: url(img/menu-banner.jpg) no-repeat 100% center;
     color: #fff;
 }
@@ -528,4 +558,31 @@ img{
     font-size: 22px;
     padding-left: 15px;
     padding-right: 5px;
+}
+
+
+/*------------------- About Us CSS ---------------*/
+#about-us{
+    background: url(img/about-banner.jpg) no-repeat 100% center;
+    color: #fff;
+}
+
+
+/*------------------- Party Hall CSS ---------------*/
+#party-hall{
+    background: url(img/blog-bg.jpg) no-repeat 100% center;
+    color: #fff;
+}
+.hall-details{
+    padding: 15% 0;
+}
+
+
+/*------------------- Our Cheff CSS ---------------*/
+#cheff-banner{
+    background: url(img/cheff-banner.jpg) no-repeat 100% center;
+    color: #fff;
+}
+.hall-details{
+    padding: 15% 0;
 }
